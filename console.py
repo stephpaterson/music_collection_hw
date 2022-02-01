@@ -6,12 +6,13 @@ from models.artist import Artist
 import repositories.album_repository as album_repo
 import repositories.artist_repository as artist_repo
 
+album_repo.delete_all()
 artist_repo.delete_all()
 
 artist = Artist("Fat Boy Slim")
 artist_repo.save(artist)
 
-album = Album("You've come a long way, baby", "Electronic")
+album = Album("You've come a long way, baby", "Electronic", artist)
 album_repo.save(album)
 
 list_artists = artist_repo.select_all()
