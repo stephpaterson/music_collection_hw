@@ -1,0 +1,1 @@
+from models.artist import Artist
