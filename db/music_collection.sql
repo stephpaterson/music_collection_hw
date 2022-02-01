@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS album;
+DROP TABLE IF EXISTS albums;
 DROP TABLE IF EXISTS artists;
 
 CREATE TABLE artists (
@@ -6,7 +6,7 @@ CREATE TABLE artists (
     id SERIAL PRIMARY KEY
 );
 
-CREATE TABLE album (
+CREATE TABLE albums (
     title VARCHAR(255),
     genre VARCHAR(255),
     id SERIAL PRIMARY KEY
