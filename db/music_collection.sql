@@ -1,5 +1,5 @@
-DROP IF EXISTS album;
-DROP IF EXISTS artists;
+DROP TABLE IF EXISTS album;
+DROP TABLE IF EXISTS artists;
 
 CREATE TABLE artists (
     name VARCHAR(255),
